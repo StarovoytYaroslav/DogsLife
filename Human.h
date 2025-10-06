@@ -18,6 +18,7 @@ public:
     std::string& getName();
     void setMood(const std::string&);
     std::string& getMood();
+    virtual ~Human() = default;
 };
 
 

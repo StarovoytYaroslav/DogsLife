@@ -6,6 +6,7 @@
 #define DOGSLIFE_SQUIREL_H
 
 #include <string>
+#include <iostream>
 
 class Squirel {
     std::string color;
@@ -15,6 +16,10 @@ public:
     std::string& getColor();
     void setMood(const std::string&);
     std::string& getMood();
+// protected:
+//     void sleep() {
+//         std::cout << "sleeping" << std::endl;
+//     }
 };
 
 

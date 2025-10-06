@@ -4,24 +4,9 @@
 
 #include "Cat.h"
 
-void Cat::setColor(const std::string& c) {
-    color = c;
-}
-std::string& Cat::getColor() {
-    return color;
-}
-void Cat::setName(const std::string& n) {
-    name = n;
-}
+#include <iostream>
+#include <string>
 
-std::string& Cat::getName() {
-    return name;
-}
-
-std::string& Cat::getMood() {
-    return mood;
-}
-
-void Cat::setMood(const std::string& m) {
-    mood = m;
+Cat::~Cat() {
+    std::cout << "Cat::~Cat()" << std::endl;
 }

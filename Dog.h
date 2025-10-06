@@ -5,22 +5,11 @@
 #ifndef DOGSLIFE_DOG_H
 #define DOGSLIFE_DOG_H
 
+#include <iostream>
 #include <string>
+#include "Animal.h"
 
-class Dog {
-private:
-    std::string name;
-    std::string color;
-    std::string mood;
-public:
-    void setColor(const std::string&);
-    std::string& getColor();
-    void setName(const std::string&);
-    std::string& getName();
-    void setMood(const std::string&);
-    std::string& getMood();
-
+class Dog : public Animal{
 };
-
 
 #endif //DOGSLIFE_DOG_H
